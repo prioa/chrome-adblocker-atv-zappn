@@ -1,0 +1,21 @@
+{
+  "name": "Austrian Adblock",
+  "version": "1.0",
+  "description": "Undetected Adblocker for atv.at and zappn.tv Mediathek",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "activeTab"
+  ],
+  "background": {
+    "activeTab": ["*://*atv.at/*", "*://*zappn.tv/*"],
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "12": "icons/icon-12x12.png",
+    "48": "icons/icon-48x48.png",
+    "128": "icons/icon-128x128.png"
+  },
+  "manifest_version": 3
+}
